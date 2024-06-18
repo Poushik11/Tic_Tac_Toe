@@ -14,7 +14,7 @@ const cell9 = document.querySelector("#c9");
 const cells = document.querySelectorAll(".cell");
 
 const game = {
-  // add counter and gamePlay here
+//
 };
 
 let counter = 0;
@@ -49,7 +49,6 @@ function Player(name, marker) {
 const player1 = new Player("paul", "O");
 const player2 = new Player("kevin", "X");
 
-// Game Over
 function gameOver(winner) {
   if (
     (gameBoard.cells[0] === gameBoard.cells[1]) === gameBoard.cells[2] ||
@@ -61,14 +60,13 @@ function gameOver(winner) {
     (gameBoard.cells[0] === gameBoard.cells[4]) === gameBoard.cells[8] ||
     (gameBoard.cells[2] === gameBoard.cells[4]) === gameBoard.cells[6]
   ) {
-    // code
+
   }
 
   console.log("Congratulations!");
   console.log(winner.name + " is the winner!");
 }
 
-// Reload button functionality
 function reload() {
   const reload = document.querySelector(".reload");
   reload.addEventListener("click", () => {
